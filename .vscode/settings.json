@@ -1,0 +1,7 @@
+{
+  "python.defaultInterpreterPath": "/usr/local/bin/python",
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "python": "python3 -u"
+  }
+}
