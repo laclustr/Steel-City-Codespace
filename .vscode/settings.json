@@ -1,6 +1,7 @@
 {
   "python.defaultInterpreterPath": "/usr/local/bin/python",
   "code-runner.runInTerminal": true,
+  "editor.parameterHints.enabled": false,
   "code-runner.executorMap": {
     "python": "python3 -u"
   }

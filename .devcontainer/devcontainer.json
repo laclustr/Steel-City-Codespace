@@ -1,27 +1,31 @@
 {
-  "name": "Python Codespace",
+  "name": "Python Dev",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
-  "features": {
-    "ghcr.io/devcontainers/features/python:1": {
-      "version": "3.11"
-    }
-  },
-  "postCreateCommand": "pip install -r requirements.txt",
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-python.python",
-        "ms-toolsai.jupyter",
-        "formulahendry.code-runner",
-        "ms-python.vscode-pylance"
+        "formulahendry.code-runner"
       ],
       "settings": {
         "python.defaultInterpreterPath": "/usr/local/bin/python",
         "code-runner.runInTerminal": true,
         "code-runner.executorMap": {
           "python": "python3 -u"
-        }
+        },
+        "editor.parameterHints.enabled": false,
+        "git.enabled": false,
+        "scm.providers.visible": false
       }
     }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    }
+  },
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "2gb"
   }
 }
